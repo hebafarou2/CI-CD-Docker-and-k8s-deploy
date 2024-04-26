@@ -12,3 +12,9 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: checkout code 
+        uses: actions/checkout@v4
+
+      - name: Build Docker image
+        run: docker-compose -f docker-compose.yml build --tag hebafarouk/wordpress2024:latest
