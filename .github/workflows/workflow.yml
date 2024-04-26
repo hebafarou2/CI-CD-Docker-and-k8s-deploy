@@ -2,7 +2,6 @@ name: Docker Image CI , k8s Deployment CD
 on:
   push:
     branches: main
-
 jobs:
 # login to Docker Hub
   login:
@@ -13,12 +12,3 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
- #check actions  
-      - name: checkout code 
-        uses: actions/checkout@v4
-     
-      - name: Build Docker image
-        run: docker-compose -f docker-compose.yml build --tag hebafarouk/wordpress2024:latest
-      
-      - name: Docker image push 
-        run: docker push hebafarouk/wordpress2024:latest
