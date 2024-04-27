@@ -20,4 +20,4 @@ jobs:
         run: docker-compose -f docker-compose.yml build --tag hebafarouk/wordpress2024:latest
 #push image on Docker Hub 
       - name: Docker image push 
-        run: docker push hebafarouk/wordpress2024
+        run: docker push hebafarouk/wordpress2024:latest
