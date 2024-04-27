@@ -15,7 +15,7 @@ jobs:
 
       - name: checkout code 
         uses: actions/checkout@v4
-
+# build docker compose and create image
       - name: Build Docker image
         run: docker-compose -f docker-compose.yml build --tag hebafarouk/wordpress2024:latest
 #push image on Docker Hub 
