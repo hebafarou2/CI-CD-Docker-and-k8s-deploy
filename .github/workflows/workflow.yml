@@ -17,7 +17,7 @@ jobs:
         uses: actions/checkout@v4
 # build docker compose and create image
       - name: Build Docker image
-        run: docker-compose -f docker-compose.yml build --tag hebafarouk/wordpress2024:latest
+        run: docker- compose build -t hebafarouk/wordpress2024:latest  
       
       - name: list docker images  
         run: docker image ls
