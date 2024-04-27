@@ -21,8 +21,8 @@ jobs:
         with:
           compose-file: "Docker/docker-compose.yml"
 
-      - name: Set image name
-        run: sed -i 's|image:.*|image:hebafarouk/wordpress2024:latest|' Docker/docker-compose.yml   
+      #- name: Set image name
+     #   run: sed -i 's|image:.*|image:hebafarouk/wordpress2024:latest|' Docker/docker-compose.yml   
           
 #- name: Build Docker image
       # run: docker-compose -f Docker/docker-compose.yml build -t hebafarouk/wordpress2024:latest 
