@@ -19,7 +19,7 @@ jobs:
       - name: create image
         uses: hoverkraft-tech/compose-action@v1.5.1
         with:
-          compose-file: "CI-CD-Docker-and-k8s-deploy/Docker/docker-compose.yml"      
+          compose-file: "Docker/docker-compose.yml"      
 
 #- name: Build Docker image
       #  run: docker-compose -f hebafarou2/CI-CD-on-Aws/Docker/docker-compose.yml build -t hebafarouk/wordpress2024:latest 
