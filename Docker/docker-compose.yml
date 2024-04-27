@@ -15,8 +15,10 @@ services:
 #  wordpress 
   wordpress:
     build:
+      #image: 
       context: .
       dockerfile: Dockerfile
+
     depends_on:   
       - mysql_database
     image: wordpress:latest   
