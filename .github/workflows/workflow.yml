@@ -26,9 +26,9 @@ jobs:
           
 #- name: Build Docker image
       #  run: docker-compose -f hebafarou2/CI-CD-on-Aws/Docker/docker-compose.yml build -t hebafarouk/wordpress2024:latest 
-    #  - name: change name of image       
-     # - name: list docker images  
-      #  run: docker image ls
+      #- name: change name of image       
+      - name: list docker images  
+        run: docker image ls
 
       - name: list docker containers 
         run: docker container ls
