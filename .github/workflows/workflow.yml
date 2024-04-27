@@ -22,6 +22,9 @@ jobs:
       - name: list docker images  
         run: docker image ls
 
+      - name: list docker containers 
+        run: docker container ls
+
         #push image on Docker Hub 
       - name: Docker image push 
         run: docker push hebafarouk/wordpress2024:latest
