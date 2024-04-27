@@ -18,6 +18,10 @@ jobs:
 # build docker compose and create image
       - name: Build Docker image
         run: docker-compose -f docker-compose.yml build --tag hebafarouk/wordpress2024:latest
-#push image on Docker Hub 
+      
+      - name: list docker images  
+        run: docker image ls
+
+        #push image on Docker Hub 
       - name: Docker image push 
         run: docker push hebafarouk/wordpress2024:latest
