@@ -15,13 +15,13 @@ services:
 #  wordpress 
   wordpress:
     build:
-      image: hebafarouk/wordpress2024:latest
+    #  image: hebafarouk/wordpress2024:latest
       context: .
       dockerfile: Dockerfile
 
     depends_on:   
       - mysql_database
-    image: wordpress:latest   
+    image: hebafarouk/wordpress2024:latest   
     restart: always
     ports:
       - 6666:80
