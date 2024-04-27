@@ -17,7 +17,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: hebafarouk/wordpress2024:latest 
     depends_on:   
       - mysql_database
     image: wordpress:latest   
